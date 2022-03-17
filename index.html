@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Game loop</title>
+        <link rel="stylesheet" href="./css/style.css" />
+        <link href="./css/all.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <!------------------- Start column One ------------------->
+            <div class="col-side1">
+                <div class="search">
+                    <form>
+                        <input type="search" id="Sear" placeholder="Search" />
+                        <label for="Sear">Search</label>
+                    </form>
+                </div>
+                <div class="members">
+                    <header>
+                        <h4>Members</h4>
+                    </header>
+                    <section class="memberProfile">
+                        <ul class="buttons">
+                            <li>Newest</li>
+                            <li>Active</li>
+                            <span><li>Popular</li></span>
+                        </ul>
+                        <ul class="people">
+                            <li>
+                                <img src="./img/1.png" alt="profil photo" />
+                                <div class="inf">
+                                    <h4>Abdo</h4>
+                                    <span>14 friends</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/6.png" alt="profil photo" />
+                                <div class="inf">
+                                    <h4>Osama</h4>
+                                    <span>10 friends</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/3.png" alt="profil photo" />
+                                <div class="inf">
+                                    <h4>Renee Gomez</h4>
+                                    <span>9 friends</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/4.png" alt="profil photo" />
+                                <div class="inf">
+                                    <h4>Ahmad</h4>
+                                    <span>9 friends</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/2.png" alt="profil photo" />
+                                <div class="inf">
+                                    <h4>Manar</h4>
+                                    <span>9 friends</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="groupsSec">
+                    <header>
+                        <h4>Groups</h4>
+                    </header>
+                    <div class="theGroups">
+                        <ul class="buttons">
+                            <li>Newest</li>
+                            <span><li>Active</li></span>
+                            <li>Popular</li>
+                            <li>Alphabetcal</li>
+                        </ul>
+                        <ul class="groupsTitl">
+                            <li>
+                                <img src="./img/22.png" alt="profil photo" />
+                                <div class="inf">
+                                    <h4>The tourist</h4>
+                                    <p>active 3 years, 8 months ago</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/13.png" alt="profil photo" />
+                                <div class="inf">
+                                    <h4>Web team</h4>
+                                    <p>active 3 years, 8 months ago</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/3.png" alt="profil photo" />
+                                <div class="inf">
+                                    <h4>Manar</h4>
+                                    <p>active 4 years, 7 months ago</p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/4.png" alt="profil photo" />
+                                <div class="inf">
+                                    <h4>Manar</h4>
+                                    <p>active 4 years, 7 months ago</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="photos">
+                    <header>
+                        <h3>Recently Active Members</h3>
+                    </header>
+                    <div class="image">
+                        <img src="./img/7.png" alt="profil photo" />
+                        <img src="./img/2.png" alt="profil photo" />
+                        <img src="./img/1.png" alt="profil photo" />
+                        <img src="./img/8.png" alt="profil photo" />
+                        <img src="./img/9.png" alt="profil photo" />
+                        <img src="./img/10.png" alt="profil photo" />
+                        <img src="./img/11.png" alt="profil photo" />
+                        <img src="./img/12.png" alt="profil photo" />
+                        <img src="./img/4.png" alt="profil photo" />
+                        <img src="./img/5.png" alt="profil photo" />
+                        <img src="./img/14.png" alt="profil photo" />
+                        <img src="./img/15.png" alt="profil photo" />
+                        <img src="./img/3.png" alt="profil photo" />
+                        <img src="./img/6.png" alt="profil photo" />
+                        <img src="./img/15.png" alt="profil photo" />
+                    </div>
+                </div>
+                <div class="calendar">
+                    <header>
+                        <h3>The Shedule</h3>
+                    </header>
+                    <h4>June 2020</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>M</th>
+                                <th>T</th>
+                                <th>W</th>
+                                <th>T</th>
+                                <th>F</th>
+                                <th>S</th>
+                                <th>S</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <footer>
+                        <h4><i class="fas fa-angle-double-left"></i> Nov</h4>
+                    </footer>
+                </div>
+            </div>
+            <!------------------- End column One ------------------->
+            <!------------------- Start center column ------------------->
+            <div class="col">
+                <div class="box slider">
+                    <img class="slider-item" src="./img/bg_1.jpg" alt="" />
+                    <!-- <div class="slider-info">
+                        <h5>Welcome to the community</h5>
+                    </div> -->
+                    <div class="slider-controllers">
+                        <span class="active" data-src="./img/bg_1.jpg"></span>
+                        <span data-src="./img/bg_2.jpg"></span>
+                        <span data-src="./img/bg_3.jpg"></span>
+                    </div>
+                </div>
+                <div class="latestActivity">
+                    <header>
+                        <h4>Lastest Activity</h4>
+                    </header>
+                    <div class="peopPhoto">
+                        <img src="./img/20.png" />
+                        <div class="peopInf">
+                            <h4>
+                                Lorem ipsum dolor sit amet.
+                                <span>Lorem, ipsum dolor.</span> Lorem ipsum
+                                dolor sit amet.
+                                <br />
+                                <p class="time">4 years, 7 Months ago .</p>
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consecteturl . Lorem,
+                                ipsum dolor sit amet consectetur adipisicing
+                                elit. Quidem consequuntur assumenda quis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="peopPhoto">
+                        <img src="./img/22.png" />
+                        <div class="peopInf">
+                            <h4>
+                                Lorem, ipsum dolor.
+                                <span>Lorem, ipsum.</span> Lorem ipsum dolor sit
+                                amet.
+                                <br />
+                                <p class="time">4 years, 7 Months ago .</p>
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <div class="peopPhoto">
+                        <img src="./img/17.png" />
+                        <div class="peopInf">
+                            <h4>
+                                Lorem ipsum dolor sit amet.
+                                <span>Lorem, ipsum.</span> Lorem ipsum dolor sit
+                                amet.
+                                <br />
+                                <p class="time">4 years, 7 Months ago .</p>
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Quo nihil quas ipsam delectus
+                                eius eveniet ad sint assumenda ut unde?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="peopPhoto">
+                        <img src="./img/21.png" />
+                        <div class="peopInf">
+                            <h4>
+                                Lorem, ipsum. <span>Lorem.</span> Lorem ipsum
+                                dolor sit amet.
+                                <br />
+                                <p class="time">4 years, 7 Months ago .</p>
+                            </h4>
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        </div>
+                    </div>
+                    <!-- .............................. -->
+                    <div class="hidden">
+                        <div class="peopPhoto">
+                            <img src="./img/22.png" />
+                            <div class="peopInf">
+                                <h4>
+                                    Lorem, ipsum. <span>Lorem.</span> Lorem
+                                    ipsum dolor sit amet.
+                                    <br />
+                                    <p class="time">4 years, 7 Months ago .</p>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                        <div class="peopPhoto">
+                            <img src="./img/24.png" />
+                            <div class="peopInf">
+                                <h4>
+                                    Lorem, ipsum. <span>Lorem.</span> Lorem
+                                    ipsum dolor sit amet.
+                                    <br />
+                                    <p class="time">4 years, 7 Months ago .</p>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <footer>
+                        <h4>Load More</h4>
+                    </footer>
+                </div>
+                <div class="lastestPosts">
+                    <header>
+                        <h4>Lastest Posts</h4>
+                    </header>
+                    <div class="posts">
+                        <ul>
+                            <li>
+                                <img
+                                    src="./img/responsive-web-square.jpg"
+                                    alt="post"
+                                />
+                                <div class="postTitil">
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Veniam exercitationem
+                                        officia explicabo error, quod quae minus
+                                        accusantium aperiam! Explicabo unde
+                                        voluptates modi. Accusantium laborum
+                                        suscipit omnis, repellendus veritatis
+                                        laudantium eos...
+                                        <i
+                                            class="fas fa-angle-double-right"
+                                        ></i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/photosjpeg.jpeg" alt="post" />
+                                <div class="postTitil">
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Veniam exercitationem
+                                        officia explicabo error, quod quae minus
+                                        accusantium aperiam! Explicabo unde
+                                        voluptates modi. Accusantium laborum
+                                        suscipit omnis, repellendus veritatis
+                                        laudantium eos....
+                                        <i
+                                            class="fas fa-angle-double-right"
+                                        ></i>
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="./img/feature_2.jpg" alt="post" />
+                                <div class="postTitil">
+                                    <h4>Lorem ipsum dolor sit amet.</h4>
+                                    <p>
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Veniam exercitationem
+                                        officia explicabo error, quod quae minus
+                                        accusantium aperiam! Explicabo unde
+                                        voluptates modi. Accusantium laborum
+                                        suscipit omnis, repellendus veritatis
+                                        laudantium eos...
+                                        <i
+                                            class="fas fa-angle-double-right"
+                                        ></i>
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <footer>
+                        <span class="One">1</span><span class="two">2</span
+                        ><i class="fas fa-angle-right"></i>
+                    </footer>
+                </div>
+                <div class="theFeatures">
+                    <header>
+                        <h4>The Features</h4>
+                    </header>
+                    <div class="features">
+                        <ul>
+                            <li>
+                                <img
+                                    src="./img/responsive-web-square.jpg"
+                                    alt="post"
+                                />
+                                <p>
+                                    Lorem ipsum, dolor sit amet Lorem ipsum
+                                    dolor sit.
+                                </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="./img/feature_2.jpg" alt="post" />
+                                <p>
+                                    Lorem ipsum, dolor sit amet Lorem, ipsum
+                                    dolor.
+                                </p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="./img/feature_4.jpg" alt="post" />
+                                <p>
+                                    Lorem ipsum, dolor sit amet Lorem ipsum
+                                    dolor sit amet.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!------------------- End Center column ------------------->
+            <!------------------- Start column Tow ------------------->
+            <div class="col-side2">
+                <div class="sign_in">
+                    <header>
+                        <h4>Sign in</h4>
+                    </header>
+                    <div class="signIn">
+                        <form>
+                            <input
+                                type="email"
+                                placeholder="Username Or Email"
+                            />
+                            <input type="password" placeholder="Password" />
+                            <div class="checkBox">
+                                <input type="checkbox" id="Checkb" />
+                                <label for="Checkb">Remember Me</label>
+                            </div>
+                            <button>Sign in</button>
+                        </form>
+                        <footer>
+                            <p>
+                                <i class="fas fa-question-circle"></i> Lost
+                                password
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+                <div class="statistics">
+                    <header>
+                        <h4>Statistics</h4>
+                    </header>
+                    <div class="stat">
+                        <div class="icon">
+                            <div class="iconName">
+                                <i class="fas fa-pen"></i>
+                                <h4>Posts</h4>
+                            </div>
+                            <span>6</span>
+                        </div>
+                        <div class="icon">
+                            <div class="iconName">
+                                <i class="fas fa-laptop-code"></i>
+                                <h4>coding</h4>
+                            </div>
+                            <span>10</span>
+                        </div>
+                        <div class="icon">
+                            <div class="iconName">
+                                <i class="fas fa-comments"></i>
+                                <h4>Comments</h4>
+                            </div>
+                            <span>13</span>
+                        </div>
+                        <div class="icon">
+                            <div class="iconName">
+                                <i class="fas fa-comments"></i>
+                                <h4>Activite</h4>
+                            </div>
+                            <span>7</span>
+                        </div>
+                        <div class="icon">
+                            <div class="iconName">
+                                <i class="fas fa-user"></i>
+                                <h4>Members</h4>
+                            </div>
+                            <span>5</span>
+                        </div>
+                        <div class="icon">
+                            <div class="iconName">
+                                <i class="fas fa-users"></i>
+                                <h4>Groups</h4>
+                            </div>
+                            <span>4</span>
+                        </div>
+                        <div class="icon">
+                            <div class="iconName">
+                                <i class="fas fa-biohazard"></i>
+                                <h4>Topics</h4>
+                            </div>
+                            <span>20</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="online">
+                    <h4>Who's online</h4>
+                    <p>There are no users currently online</p>
+                </div>
+                <div class="recentReplies">
+                    <header>
+                        <h4>Recent Replies</h4>
+                    </header>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit
+                            <span>4 years, 7 Months ago .</span>
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit
+                            <span>4 years, 7 Months ago .</span>
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit
+                            <span>4 years, 7 Months ago .</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="recentTopics">
+                    <header>
+                        <h4>Recent Topics</h4>
+                    </header>
+                    <ul>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur
+                            <span>by</span>
+                            Abdelrahman <span>4 years.</span>
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur
+                            <span>by</span>
+                            Osama <span>4 years, 7 Months ago .</span>
+                        </li>
+                        <li>
+                            Lorem ipsum dolor sit amet consectetur
+                            <span>by</span>
+                            Saleh <span>5 years.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!------------------- End column Tow ------------------->
+        </div>
+        <!-----------Start footer-->
+        <div class="copyright">
+            <h3>Copyright &copy; 2020 Abdelrahman Awad</h3>
+        </div>
+        
+        <!-----------End footer-->
+        <script src="./js/main.js"></script>
+    </body>
+</html>
