@@ -1,0 +1,625 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #dedede;
+}
+
+span {
+    font-size: 14px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 0 100px;
+}
+
+.container .col-side1,
+.col-side2 {
+    padding: 20px;
+    flex-basis: 25%;
+    flex-shrink: 0;
+}
+
+.container .col {
+    flex-grow: 1;
+}
+
+/* Start column one */
+
+/* Start search Div */
+
+.col-side1 .search form {
+    background-color: #ffff;
+    padding: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.col-side1 .search form input {
+    padding: 10px;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    margin-right: 3px;
+}
+
+.col-side1 .search form label {
+    background-color: #2f9bc1;
+    color: #fff;
+    padding: 9px 20px;
+    border-radius: 5px;
+}
+
+/* End search Div */
+
+/* Start members & groups sections */
+
+.col-side1 .members,
+.groupsSec {
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.col-side1 .members header,
+.groupsSec header {
+    padding: 18px 20px;
+    border-bottom: 2px solid #f0f0ed;
+}
+
+.col-side1 .members .memberProfile,
+.theGroups {
+    padding: 0px 0px 0px 20px;
+}
+
+.col-side1 .members .memberProfile .buttons,
+.groupsSec .buttons {
+    display: flex;
+    list-style: none;
+    padding: 20px 30px 20px 0;
+    flex-wrap: wrap;
+}
+
+.col-side1 .members .memberProfile .buttons li,
+.groupsSec .buttons li {
+    padding: 5px;
+    background-color: #77af12;
+    margin: 5px 3px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.col-side1 .members .memberProfile .buttons span li,
+.groupsSec .theGroups span li {
+    background-color: #679710;
+}
+
+.col-side1 .members .memberProfile .people,
+.groupsSec .groupsTitl {
+    list-style: none;
+    padding: 10px 5px;
+}
+
+.col-side1 .members .memberProfile .people li,
+.groupsSec .groupsTitl li {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.col-side1 .members .memberProfile .people li img,
+.groupsSec .groupsTitl li img {
+    width: 48px;
+    border-radius: 5px;
+}
+
+.col-side1 .members .memberProfile .people li .inf,
+.groupsSec .theGroups .groupsTitl li .inf {
+    padding: 0 10px;
+}
+
+.col-side1 .members .memberProfile .people li h4 {
+    padding: 3px 15px 6px 5px;
+}
+
+.groupsSec .groupsTitl li h4 {
+    padding: 0px 0px 3px 5px;
+}
+
+.col-side1 .members .memberProfile .people li span {
+    padding: 4px 14px;
+    border-radius: 5px;
+    margin: 0 8px;
+    background-color: #dfedf5;
+    color: #2f7b9b;
+    font-size: 15px;
+}
+
+.col-side1 .groupsSec .groupsTitl p {
+    padding: 4px 5px;
+    border-radius: 5px;
+    margin: 0 8px;
+    width: 95%;
+    background-color: #dfedf5;
+    color: #2f7b9b;
+    font-size: 13px;
+}
+
+/* End members & groups sections */
+
+/* Start photo div */
+
+.col-side1 .photos {
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.col-side1 .photos header {
+    padding: 18px 20px;
+    border-bottom: 2px solid #f0f0ed;
+}
+
+.col-side1 .photos .image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: start;
+    padding: 20px 20px;
+}
+
+.col-side1 .photos .image img {
+    width: 45px;
+    border-radius: 5px;
+    margin: 0 0 16px 10px;
+}
+
+/* End photo div */
+
+.col-side1 .calendar header {
+    padding: 25px;
+    border-bottom: 2px solid #eee;
+}
+
+.col-side1 .calendar {
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.col-side1 .calendar h4 {
+    padding: 15px 25px;
+    text-align: right;
+    color: #979797;
+}
+
+.col-side1 .calendar table {
+    margin: 0 auto;
+}
+
+.col-side1 .calendar table thead tr th {
+    padding: 10px;
+    color: #979797;
+}
+
+.col-side1 .calendar table tbody tr td {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: #adadad;
+}
+
+.col-side1 .calendar footer h4 {
+    padding: 10px 25px 20px 25px;
+    text-align: left;
+    color: black;
+}
+
+.col-side1 .calendar footer h4 i {
+    font-size: 13px;
+}
+
+/* End column one */
+
+/* Start column two */
+
+.col-side2 .sign_in {
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.col-side2 .sign_in header {
+    padding: 18px 20px;
+    border-bottom: 2px solid #f0f0ed;
+}
+
+.col-side2 .sign_in form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px 30px;
+}
+
+.col-side2 .sign_in form input {
+    display: block;
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eee;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.col-side2 .sign_in form .checkBox {
+    display: flex;
+    align-items: center;
+}
+
+.col-side2 .sign_in form .checkBox #Checkb {
+    width: auto;
+}
+
+.col-side2 .sign_in form .checkBox label {
+    padding: 10px;
+    color: #adadad;
+}
+
+.col-side2 .sign_in form button {
+    background-color: #2f9bc1;
+    color: #fff;
+    padding: 18px 20px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+.col-side2 .sign_in footer {
+    text-align: right;
+    padding: 0 51px 20px 0;
+}
+
+.col-side2 .statistics {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.col-side2 .statistics header {
+    padding: 18px 20px;
+    border-bottom: 2px solid #f0f0ed;
+}
+.col-side2 .stat {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.col-side2 .icon {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 85%;
+    background-color: #c12f6c;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.col-side2 .statistics .stat .icon .iconName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.col-side2 .statistics .stat .icon .iconName i,
+.iconName h4 {
+    padding: 0 5px;
+}
+
+.col-side2 .statistics .stat .icon span {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.col-side2 .online {
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.col-side2 .online h4 {
+    border-bottom: 2px solid #eee;
+    padding: 13px 20px;
+}
+
+.col-side2 .online p {
+    padding: 10px 15px 0px 15px;
+    color: #adadad;
+    text-align: center;
+}
+
+.col-side2 .recentReplies,
+.recentTopics {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.col-side2 .recentReplies header,
+.recentTopics header {
+    padding: 20px 15px;
+    border-bottom: 2px solid #eee;
+}
+
+.col-side2 .recentReplies ul,
+.recentTopics ul {
+    padding: 20px 25px;
+    list-style: none;
+}
+
+.col-side2 .recentReplies ul li,
+.recentTopics ul li {
+    padding: 10px 0;
+}
+
+.col-side2 .recentReplies ul li span,
+.recentTopics ul li span {
+    color: #afadad;
+}
+
+/* End column Two */
+
+/* Start center column */
+
+.slider {
+    position: relative;
+    border-radius: 5px;
+}
+.slider img.slider-item {
+    width: 100%;
+    border-radius: 5px;
+    height: 300px;
+    object-fit: cover;
+}
+.slider .slider-items img.active {
+    display: block;
+}
+.slider .slider-info {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 22px;
+    color: #fff;
+}
+.slider .slider-controllers {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.slider .slider-controllers span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: rgba(51, 51, 51, 0.8);
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.slider .slider-controllers span.active {
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.col .slider {
+    background-image: url(../img/bg_2.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    background-position: center;
+    margin: 20px 0;
+}
+
+.col .slider h1 {
+    padding: 145px;
+    opacity: 0;
+}
+
+.col .latestActivity {
+    padding: 0 0 20px 0;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.col .latestActivity header {
+    padding: 20px;
+    border-bottom: 2px solid #dedede;
+    background-color: #eee;
+    border-radius: 15px 15px 0 0;
+    font-weight: 900;
+}
+
+.col .latestActivity footer {
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 10px;
+    display: flex;
+    margin: 15px 30px 0px 30px;
+    justify-content: center;
+}
+
+.peopPhoto {
+    display: flex;
+    padding: 20px;
+    border-bottom: 2px solid #eee;
+    background-color: #fff;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.peopPhoto img {
+    width: 10%;
+    border-radius: 10px;
+}
+
+.peopPhoto .peopInf {
+    padding: 20px;
+}
+
+.peopPhoto .peopInf h4 {
+    padding: 15px 0;
+}
+
+.peopPhoto .peopInf .time {
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.peopPhoto .peopInf span,
+.peopPhoto p {
+    width: 70%;
+    color: #adadad;
+}
+
+.col .latestActivity .hidden {
+    display: none;
+    border-bottom: none;
+}
+
+.col .lastestPosts {
+    background-color: #fff;
+    margin: 20px 0;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+.col .lastestPosts header {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+.col .lastestPosts .posts ul {
+    padding: 10px;
+    list-style: none;
+}
+
+.col .lastestPosts .posts ul li {
+    padding: 15px;
+    display: flex;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.col .lastestPosts .posts ul li img {
+    width: 125px;
+    border-radius: 10px;
+}
+
+.col .lastestPosts .posts ul li .postTitil {
+    padding: 0 15px;
+}
+
+.col .lastestPosts .posts ul li .postTitil p {
+    color: #adadad;
+    margin-top: 5px;
+}
+
+.col .lastestPosts .posts ul li .postTitil p i {
+    color: #adadad;
+
+    font-size: 15px;
+}
+
+.col .lastestPosts footer {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.col .lastestPosts footer .One {
+    width: 20px;
+    text-align: center;
+    background: #e4e4e4;
+    border-radius: 3px;
+    color: #888;
+    padding: 3px;
+}
+
+.col .lastestPosts footer .two {
+    width: 20px;
+    margin: 0 5px;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 3px;
+    color: #888;
+    padding: 3px;
+}
+
+.col .lastestPosts footer i {
+    content: "\f105";
+    background-color: #f9f9f9;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 25px;
+    color: #888;
+}
+
+.col .theFeatures {
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.col .theFeatures header {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+.col .theFeatures .features {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.col .theFeatures .features ul {
+    list-style: none;
+}
+
+.col .theFeatures .features ul li img {
+    width: 90%;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.col .theFeatures .features ul li p {
+    font-size: 15px;
+}
+
+/* End center column */
+/* Start footer */
+
+.copyright{
+    padding: 15px 0;
+    text-align: center;
+    background-color: #2f7b9b;
+    color: #fff;
+}
+
+/* End footer */
